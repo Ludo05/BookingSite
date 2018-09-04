@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en" >
+    <title>Lewis Hotel - Rooms</title>
+    <meta charset="UTF-8" />
+    <link th:href="@{/ADD_THEMES/site.css}" rel="stylesheet"/>
+</head>
+<body>
+<h1>Rooms Available</h1>
+    <table>
+        <tr>
+            <td>Room</td>
+            <td>Number</td>
+        </tr>
+        <tr th:each="room:${rooms}">
+            <td th:text="${room.roomname}"></td>
+            <td th:text="${room.number}"></td>
+        </tr>
+
+    </table>
+
+
+</body>
+</html>
