@@ -1,6 +1,10 @@
 package com.spring.myWebsite.Controller;
 
 import com.spring.myWebsite.Model.Room;
+import com.spring.myWebsite.Repository.RoomRepo;
+import com.spring.myWebsite.Service.RoomServiceImpl;
+import com.spring.myWebsite.Service.RoomServices;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,18 +16,16 @@ import java.util.List;
 @Controller
 @RequestMapping("/rooms")
 public class RoomController {
-    private static List<Room> rooms = new ArrayList<>();
+    private RoomServices roomServices;
 
-    static {
-        for(int i = 0; i < 10; i++){
-            rooms.add(new Room("Rooms:" + i,"100"+i));
-        }
+    @Autowired
+    public RoomController(RoomServices roomServices) {
+        this.roomServices = roomServices;
     }
-
     @GetMapping("/allRooms")
     public String getRooms(Model model){
 
-        model.addAttribute("rooms",rooms);
+        model.addAttribute("rooms",this.roomServices.getAllRooms());
 
         return "rooms";
     }
