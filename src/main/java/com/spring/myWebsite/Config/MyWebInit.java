@@ -1,4 +1,4 @@
-package com.spring.myWebsite;
+package com.spring.myWebsite.Config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
@@ -12,7 +12,7 @@ public class MyWebInit extends
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class<?>[] {MainWebConfig.class,ApiWebConfig.class};
+        return new Class<?>[] {MainWebConfig.class, ApiWebConfig.class};
     }
 
     @Override

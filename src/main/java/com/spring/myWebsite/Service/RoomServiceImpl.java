@@ -1,7 +1,7 @@
 package com.spring.myWebsite.Service;
 
 import com.spring.myWebsite.Model.Room;
-import com.spring.myWebsite.Repository.RoomRepo;
+import com.spring.myWebsite.Repository.RoomCrudRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,19 +11,19 @@ import java.util.List;
 @Service
 public class RoomServiceImpl implements RoomServices {
 
-    private RoomRepo roomRepo;
+    private RoomCrudRepo roomCrudRepo;
 
     @Autowired
-    public RoomServiceImpl(RoomRepo roomRepo){
-        this.roomRepo = roomRepo;
+    public RoomServiceImpl(RoomCrudRepo roomCrudRepo){
+        this.roomCrudRepo = roomCrudRepo;
     }
 
 
     @Override
     public List<Room> getAllRooms() {
-
-        return roomRepo.getRooms();
-
+        List<Room>  rooms = new ArrayList<>();
+        this.roomCrudRepo.findAll().forEach(rooms::add);
+        return rooms;
     }
 
 }

@@ -1,14 +1,4 @@
-management:
-  security:
-    enabled: false
-server:
-  ssl:
-    key-store: classpath:keystore.jks
-    key-store-password: password
-    key-store-type: JKS
-    key-alias: booking
-    key-password: password
----
+
 
 spring:
   profiles: dev

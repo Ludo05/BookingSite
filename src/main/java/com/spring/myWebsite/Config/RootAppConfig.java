@@ -1,4 +1,4 @@
-package com.spring.myWebsite;
+package com.spring.myWebsite.Config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
