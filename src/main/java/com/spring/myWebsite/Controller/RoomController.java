@@ -6,10 +6,7 @@ import com.spring.myWebsite.Service.RoomServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/rooms")
@@ -32,11 +29,18 @@ public class RoomController {
     @GetMapping("/add")
     public @ResponseBody String addRoom(@RequestParam String name, @RequestParam String number){
 
-        var room = new Room();
-        room.setRoomname(name);
-        room.setNumber(number);
-        roomCrudRepo.save(room);
+        this.roomServices.addRoom(name,number);
 
         return "Saved!";
+    }
+
+    @RequestMapping(name = "/getRoom/{id}", method = RequestMethod.GET)
+    public @ResponseBody  String getRoom(@PathVariable Long id){
+
+        this.roomServices.getRoom(id);
+        if(roomServices.getRoom(id).isPresent()) {
+            return "Found!! :)";
+        }
+        return "Not Found :(";
     }
 }
