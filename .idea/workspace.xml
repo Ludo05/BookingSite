@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2da58903-d290-4b3f-b666-dc74afcb1540" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Controller/UserControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Controller/RoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Service/RoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Service/RoomServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Service/RoomServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Service/RoomServices.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -40,7 +34,7 @@
           <entry key="css" value="1" />
           <entry key="gradle" value="12" />
           <entry key="html" value="19" />
-          <entry key="java" value="108" />
+          <entry key="java" value="109" />
           <entry key="properties" value="8" />
           <entry key="sql" value="7" />
           <entry key="yml" value="3" />
@@ -52,7 +46,7 @@
           <entry key="DBN-SQL" value="2" />
           <entry key="Groovy" value="12" />
           <entry key="HTML" value="19" />
-          <entry key="JAVA" value="108" />
+          <entry key="JAVA" value="109" />
           <entry key="Properties" value="8" />
           <entry key="SQL" value="5" />
           <entry key="YAML" value="3" />
@@ -64,9 +58,9 @@
           <entry key="dummy" value="4" />
           <entry key="gradle" value="190" />
           <entry key="html" value="563" />
-          <entry key="java" value="3305" />
+          <entry key="java" value="3316" />
           <entry key="properties" value="58" />
-          <entry key="txt" value="37" />
+          <entry key="txt" value="50" />
           <entry key="yml" value="317" />
         </counts>
       </usages-collector>
@@ -75,8 +69,8 @@
           <entry key="CSS" value="32" />
           <entry key="Groovy" value="190" />
           <entry key="HTML" value="563" />
-          <entry key="JAVA" value="3305" />
-          <entry key="PLAIN_TEXT" value="41" />
+          <entry key="JAVA" value="3316" />
+          <entry key="PLAIN_TEXT" value="54" />
           <entry key="Properties" value="58" />
           <entry key="YAML" value="317" />
         </counts>
@@ -85,6 +79,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Controller/UserControl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Service/RoomServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -97,7 +103,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Controller/RoomController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="365">
@@ -603,10 +609,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Controller/UserControl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Service/RoomServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Service/RoomServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Controller/RoomController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Controller/UserControl.java" />
       </list>
     </option>
   </component>
@@ -716,7 +722,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536708405333" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536754905370" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -819,14 +825,21 @@
       <option name="project" value="LOCAL" />
       <updated>1536706514950</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Code Clean up">
+      <created>1536708462327</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1536708462327</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34006462" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34006462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -838,7 +851,7 @@
       <window_info id="Job Explorer" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30547947" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30547947" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -898,7 +911,8 @@
     <MESSAGE value="Added SSL" />
     <MESSAGE value="Added Dummy Data" />
     <MESSAGE value="Added MySQL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added MySQL" />
+    <MESSAGE value="Code Clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code Clean up" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Controller/QuoteReqeustManagementController.java" />
@@ -1133,16 +1147,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Controller/UserControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Service/RoomServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -1157,6 +1161,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/myWebsite/Controller/UserControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
