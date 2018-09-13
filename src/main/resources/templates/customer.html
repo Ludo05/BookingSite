@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <!--   <p th:text="'customer name is:' + ${firstName} + ' ' + ${lastName}"></p> -->
+    <form action="#" th:action="@{/postName}" th:object="${customer}" method="post">
+        <p>First Name: <input type="text" th:field="*{firstName}" /></p>
+        <p>Last Name: <input type="text" th:field="*{lastName}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+
+    </form>
+</body>
+</html>

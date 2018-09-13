@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer result</title>
+</head>
+<body>
+    <h1>Customer below has been added</h1>
+    <p th:text="'Name :' + ${customer.firstName} + ' ' + ${customer.lastName}"></p>
+    <button><a href="/postName">Click add another customer.</a></button>
+    <a class="button" href="/postName">You can also click here</a>
+</body>
+</html>
