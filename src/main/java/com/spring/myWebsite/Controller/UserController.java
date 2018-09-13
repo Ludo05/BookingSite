@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/user")
-public class UserControl {
+public class UserController {
 
     //   @GetMapping(name = "/addMe")
     @RequestMapping(name = "/addMe",method = RequestMethod.GET)
