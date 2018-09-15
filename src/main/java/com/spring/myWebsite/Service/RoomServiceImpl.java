@@ -37,8 +37,8 @@ public class RoomServiceImpl implements RoomServices {
     @Override
     public void addRoom(String name, String number) {
         var room = new Room();
-        room.setRoomname(name);
-        room.setNumber(number);
+        room.setRoomName(name);
+        room.setRoomNumber(number);
         roomCrudRepo.save(room);
     }
 }

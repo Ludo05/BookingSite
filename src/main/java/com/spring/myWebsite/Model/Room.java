@@ -9,9 +9,9 @@ public class Room {
     @GeneratedValue(strategy=GenerationType.AUTO)
     public Long id;
     @Column(name = "Room_Name")
-    public String roomname;
+    public String roomName;
     @Column(name = "Room_Number")
-    public String number;
+    public String roomNumber;
 
     public Room(){}
 
@@ -22,18 +22,18 @@ public class Room {
         this.id = id;
     }
 
-    public String getRoomname() {
-        return roomname;
+    public String getRoomName() {
+        return roomName;
     }
-    public void setRoomname(String roomname) {
-        this.roomname = roomname;
-    }
-
-    public String getNumber() {
-        return number;
+    public void setRoomName(String roomName) {
+        this.roomName = roomName;
     }
 
-    public void setNumber(String number) {
-        this.number = number;
+    public String getRoomNumber() {
+        return roomNumber;
+    }
+
+    public void setRoomNumber(String roomNumber) {
+        this.roomNumber = roomNumber;
     }
 }
