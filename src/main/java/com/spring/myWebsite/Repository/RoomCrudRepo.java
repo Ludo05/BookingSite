@@ -37,6 +37,11 @@ public interface RoomCrudRepo extends CrudRepository<Room,Long> {
      */
     Room findByRoomNumber (String roomNumber);
 
-    @Query("SELECT roomName,roomNumber,id from Room  where  name.roomName=:nme")
+    @Query("SELECT roomName,roomNumber,id from Room  where  roomName=:nme")
     Room findRoom(@Param("nme") String name);
+
+    @Query("SELECT roomName from  Room WHERE  id=:id")
+    Room findRoomByid(@Param("id") int id);
+
+    Room findRoomByIdEquals(int id);
 }
